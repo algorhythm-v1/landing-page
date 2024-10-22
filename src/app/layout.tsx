@@ -23,24 +23,6 @@ const neue = localFont({
     variable: "--font-neue",
 });
 
-const ttInterphasesPro = localFont({
-    src: [
-        {
-            path: "../../public/assets/fonts/tt-interphases-pro/TT Interphases Pro Trial Regular.ttf",
-            weight: "400",
-        },
-        {
-            path: "../../public/assets/fonts/tt-interphases-pro/TT Interphases Pro Trial Medium.ttf",
-            weight: "500",
-        },
-        {
-            path: "../../public/assets/fonts/tt-interphases-pro/TT Interphases Pro Trial Bold.ttf",
-            weight: "700",
-        },
-    ],
-    variable: "--font-interphases-pro",
-});
-
 import "./globals.css";
 
 export default function RootLayout({
@@ -51,9 +33,9 @@ export default function RootLayout({
     return (
         <html
             lang="en"
-            className={`${neue.variable} ${ttInterphasesPro.variable}`}
+            className={`${neue.variable}`}
         >
-            <body className="bg-black text-white font-inter flex flex-col justify-start">
+            <body className="bg-black text-white flex flex-col justify-start">
                 {children}
             </body>
         </html>
