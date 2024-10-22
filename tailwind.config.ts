@@ -15,7 +15,6 @@ const config: Config = {
             },
             fontFamily: {
                 neue: ["var(--font-neue)"],
-                inter: ["var(--font-interphases-pro)"],
             },
             colors: {
                 // black: "#191819",
